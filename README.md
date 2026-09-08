@@ -30,7 +30,22 @@ Python for the core pipeline; scraping/ETL, NLP/sentiment modeling, and dashboar
 
 ## Project status
 
-This is being actively built. No layer is complete yet, and no results, accuracy figures, or constituency counts will be published here or anywhere else until they're real and reproducible. Progress updates will replace this section as each layer comes online.
+This is being actively built, one layer at a time. Nothing is published
+here until it is real, sourced, and reproducible from the code and data in
+this repo.
+
+**Layer 1 (contest-risk model): MVP implemented.** Covers all 403 UP
+assembly constituencies using real 2017 and 2022 election results
+(Wikipedia-sourced, ECI-derived). Scores each seat on historical margin
+closeness, margin trend, and seat turnover between the two cycles -- see
+[`docs/contest_risk.md`](docs/contest_risk.md) for the full method, data
+provenance, and explicit limitations (notably: only two election cycles so
+far, and no per-constituency 2017 turnout figure exists in the source, so
+turnout-change is not yet a signal).
+
+**Layers 2-4 (candidate transparency, sentiment monitoring,
+response-recommendation): not started.** No code, data, or design beyond
+the one-paragraph descriptions above exists for these yet.
 
 ## Repository structure
 
