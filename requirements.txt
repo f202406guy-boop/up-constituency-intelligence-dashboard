@@ -1,0 +1,4 @@
+# Core dependencies — finalized as each layer is built out
+pandas
+psycopg2-binary
+python-dotenv
